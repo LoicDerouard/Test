@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+</html>
+<html>
+    <head> 
+        <meta charset="utf-8" />
+        <title>Formulaire</title>
+    </head>
+
+    <body>
+        <form>
+        <div>
+             <fieldset>
+             <legend>Genre<abbr title="Ce champ est obligatoire"></abbr></legend>
+             <input type="radio" required name="Genre"  id="r1"  value="Monsieur"><label for="r1">Mr.</label>
+             
+             <input type="radio" required name="Genre" id="r2" value="Madame"><label for="r2">Mme.</label>
+
+             <input type="radio" required name="Genre" id="r3" value="Autre"><label for="r3">Autre</label>
+
+            </fieldset></div> <br/>
+        <div> <label for="lastname">Nom</label>
+            <input id="Nom" name="Nom" required>
+        </div> <br/>
+        <div>
+            <label for="name">Prénom</label>
+            <input id="prénom" name="Prénom" required>
+        </div> <br/>
+        <div>
+            <label for="naissance">Date de naissance </label>
+                <input type="date" id="naissance" name="Date de naissance" 
+                    value="1950-01-01" max="2022-03-07" input/>
+          
+        </div> <br/>
+        <div>
+        <fieldset>
+            <legend>Permis B<abbr title="obligatoire"></abbr></legend>
+            <input type="radio" required name="Permis"  id="r4"  value="Oui"><label for="r4">Oui</label>
+            <input type="radio" required name="Permis"  id="r5"  value="Non"><label for="r5">Non</label>
+        </div> <br/>
+        <div>   
+            <label for="Pays">Pays</label> <br/>
+
+            <select name="Pays" id="Pays">
+                <option value="Choisissez votre pays">Choisissez votre pays</option>
+                <option value="France">France</option>
+                <option value="Italie">Italie</option>
+                <option value="Angleterre">Angleterre</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Etats-Unis">Etats-Unis</option>
+            </select> <br/>
+            <br/>
+            <div>
+                <label for="Numéro">Numéro de téléphone</label>
+                <input type="number" id="Tél" name="amount" value="0" min="1" max="99999999999">
+            </div> <br/>
+            
+
+        <div><button>Envoyer</button></div>
+        </form>
+    </body>
